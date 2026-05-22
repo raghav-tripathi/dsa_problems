@@ -7,11 +7,6 @@ fun findMin(arr: IntArray): Int {
     var end = arr.size - 1
     while (start < end) {
         val mid = start + (end - start) / 2
-
-        println("Data is$mid ${arr[mid]} and ${arr[mid + 1]}")
-
-
-
         if (arr[mid] > arr[end]) {
             start = mid+1
         } else {
