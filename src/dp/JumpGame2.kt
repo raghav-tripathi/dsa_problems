@@ -1,4 +1,4 @@
-package questions
+package dp
 
 fun jump(nums: IntArray): Int {
     var current = 0

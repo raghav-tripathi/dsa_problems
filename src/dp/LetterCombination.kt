@@ -1,4 +1,4 @@
-package questions
+package dp
 
 fun letterCombinations(digits: String): List<String> {
 
@@ -36,11 +36,16 @@ fun letterCombinations(digits: String): List<String> {
 
         val letters = map[digit]!!
 
+        println("Current letter: $letters, $current")
+
         for (char in letters) {
 
             current.append(char)
 
+            println("Char: $current $index")
+
             backtrack(index + 1, current)
+            println("Called Backtracking: ${current.length}")
 
             current.deleteCharAt(current.length - 1)
         }

@@ -1,4 +1,4 @@
-package questions
+package dp
 
 fun generateParenthesis(n:Int):List<String>{
     val ans = mutableListOf<String>()

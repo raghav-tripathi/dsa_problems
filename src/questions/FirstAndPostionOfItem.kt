@@ -1,12 +1,12 @@
 package questions
 
 
-fun searchRange(nums: IntArray, target: Int): IntArray {
+fun searchRange(nums: IntArray, target: Int): Int {
 
     val first = findFirst(nums, target)
     val last = findLast(nums, target)
 
-    return intArrayOf(first, last)
+    return (last-first)+1
 }
 
 private fun findFirst(nums: IntArray, target: Int): Int {
